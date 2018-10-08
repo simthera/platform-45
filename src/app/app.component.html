@@ -1,0 +1,99 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+  <div class="row">
+    <div class="left col-4">
+      <div class="avatar">
+          <img src="../assets/images/avatar.svg">
+      </div>
+      <div class="text">
+        <h1>Front-end challenge</h1>
+        <p>This is the design that you will need to code up and impress us</p>
+      </div>
+      <div class="toogle-btn">
+        <img src="../assets/images/toggle.png" width="50" ng-model-options="hide">
+      </div>
+    </div>
+    <div class="right col-8">
+      <div style="display: none">
+        <form [formGroup]="angForm" novalidate>
+          <div class="form-group"><label>
+                <span  class="labels">Name</span>
+                <input type="text" formControlName="name" #name/> 
+              </label>
+          </div>
+          <div *ngIf="angForm.controls['name'].invalid && (angForm.controls['name'].dirty || angForm.controls['name'].touched)" class="validation-err">
+              
+                Name is required.
+          </div>
+              <div class="form-group">
+              <label class="radio-buttons">
+                <span class="labels">Gender</span>
+                  <input type="radio" value="Male" formControlName="male" #male>
+                  <span class="card-image"><img src="../assets/images/male.svg"/></span>
+                  <span class="card-text">male</span>
+                </label>
+                <label class="radio-buttons">
+                  <input type="radio" value="Female" formControlName="female" #female>
+                  <span class="card-image"><img src="../assets/images/female.svg"/></span>
+                  <span class="card-text">female</span>
+                </label>
+                </div>
+                <div class="form-group"><label>
+                  <span class="labels">Date of birth</span>
+                  <input type="date" [formControl]="dob">
+                </label></div>
+                <div class="form-group">
+                  <label>
+                    <span class="labels">Email</span>
+                    <input type="text" formControlName="email" #email>
+                  </label>
+                </div>
+                <div *ngIf="angForm.controls['email'].invalid && (angForm.controls['email'].dirty || angForm.controls['email'].touched)" class="alert alert-danger">
+                      Email is required.
+                </div>
+                  <div class="form-group"><label>
+                      <span class="labels">Mobile</span>
+                      <input type="number" [formControl]="mobile">
+                    </label></div>
+                    <div class="form-group"><label>
+                        <span class="labels">Customer ID</span>
+                        <input type="text" [formControl]="customerid">
+                      </label></div>
+                      <div class="form-group">
+                        <label class="radio-buttons">
+                        <span class="labels">Gender</span>
+                          <input type="radio" value="Male" formControlName="gender">
+                            <span class="card-image"><img src="../assets/images/card.svg"/></span>
+                            <span class="card-text">Classic</span>
+                        </label>
+                        <label class="radio-buttons">
+                          <input type="radio" value="Female" formControlName="gender">
+                          <span class="card-image"><img src="../assets/images/card.svg"/></span>
+                            <span class="card-text">Silver</span>
+                        </label>
+                        <label class="radio-buttons">
+                          <input type="radio" value="Female" formControlName="gender">
+                          <span class="card-image"><img src="../assets/images/card.svg"/></span>
+                            <span class="card-text">Gold</span>
+                        </label></div>
+                        <div class="form-group">
+                            <div class="buttons-container">
+                                <input  class="cancel-btn form-buttons" type="submit" id="submit" value="Cancel" />
+                                <input class="save-btn form-buttons" type="submit" id="submit" value="Save" />
+                              </div>
+                        </div>
+                    
+                      
+        </form>  
+    </div>
+    <div class="world-day" ng-hide="hide">
+      <h1>My world today</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare massa eget egestas purus. Diam in arcu cursus euismod quis viverra. Aliquam nulla facilisi cras fermentum odio eu feugiat. Velit sed ullamcorper morbi tincidunt ornare massa eget. Ultricies tristique nulla aliquet enim tortor at auctor urna. Etiam erat velit scelerisque in dictum non consectetur. Aenean euismod elementum nisi quis eleifend quam adipiscing vitae. In tellus integer feugiat scelerisque varius morbi enim. Aliquam faucibus purus in massa tempor nec feugiat. Sed felis eget velit aliquet sagittis id consectetur purus. Habitant morbi tristique senectus et netus et malesuada. Consectetur lorem donec massa sapien faucibus et molestie ac feugiat. Imperdiet proin fermentum leo vel orci. Sed vulputate mi sit amet. mauris commodo quis. Enim praesent elementum facilisis leo vel fringilla est. Non nisi est sit amet. At risus viverra adipiscing at in tellus integer. Tempus imperdiet nulla malesuada pellentesque elit eget gravida. Eget nulla facilisi etiam dignissim diam quis enim. 
+        </p>
+    
+      </div>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,114 @@
+/* You can add global styles to this file, and also import other style files */
+@import './styles/bootstrap.min.css';
+:root {
+    --sunflower-yellow: #ffd500;
+    --cloudy-blue: #cad7dd;
+    --tangerine: #ff9200;
+    --charcoal-grey: #373d40;
+    --greeny-blue: #49c8a8;
+    --white: #ffffff;
+    --tiffany-blue: #60e6c5;
+    --cloudy-blue-two: #b1bfcd;
+    --pale-grey: #f5f8f9;
+    --black: #383838;
+  }
+.left {
+    background: var(--sunflower-yellow);
+    text-align: center;
+    border-bottom-left-radius: 35px;
+    border-top-left-radius: 35px;
+}
+.right {
+  background: var(--white);
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #373d40;
+  color: var(--charcoal-grey);
+
+  .labels {
+    width: 193px;
+    float: left;
+    margin: 14px 0;
+  }
+}
+.right.col-8 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.avatar {
+    padding: 90px 0;
+}
+input {
+    background: var(--pale-grey);
+    border:none;
+    padding: 15px;
+}
+input[type="text"],input[type="number"],input[type="email"],input[type="date"] {
+    min-width: 360px;
+} 
+input:focus {
+    border: 2px solid var(--cloudy-blue-two); 
+}
+.radio-buttons > input{ 
+    visibility: hidden; 
+    position: absolute; 
+  }
+.save-btn {
+    background: var(--greeny-blue);
+    color: var(--white);
+}
+.form-buttons {
+    border-radius: 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-left: 20px;
+    padding: 20px 40px;
+}
+.buttons-container {
+    margin-left: 215px;
+}
+
+.text {
+    h1 {
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom:15px; 
+    }
+}
+.toogle-btn {
+    padding: 50px 0;
+}
+.validation-err {
+    color: var(--tangerine);
+}
+.card-image {
+    background: var(--pale-grey);
+    padding: 12px 8px;
+    border-radius: 50%;
+}
+.card-text {
+    font-size: 14px;
+    color: var(--cloudy-blue-two);
+    padding: 0 20px;
+}
+.world-day {
+    background: var(--tangerine);
+    color: var(--black);
+    padding: 90px 68px 357px;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    font-family: Arial;
+    font-size: 15px;
+
+    h1 {
+        font-weight: bold;
+        font-size: 32px;
+        padding-bottom: 38px;
+    }
+}
